@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media_Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="musicbox.css">
+
+</head>
+
+<body>
+    <div class="container border bg-black">
+        <div class="navbar border flex pt-1">
+            <div class="op">
+                <ul>
+                    <li class="invert"><img src="svgs/logo.svg" alt="logo"></li>
+                    <li class="invert"><img src="svgs/home.svg" alt="home"></li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <span class="material-symbols-outlined">search</span>
+                <input type="text" placeholder="What do you want to play?" />
+                <span class="vl"></span>
+                <span class="material-symbols-outlined">browse</span>
+            </div>
+            <!-- <img class="search-svg invert" src="search.svg" alt="search-svg"> -->
+<div class="buttons-a side-bar">
+                <img class="close-sidebar" src="svgs/close.svg" alt="close-img">
+                <button class="btn-btn-1">Explore Premium</button>
+                <button class="btn-btn-1">Support</button>
+                <button class="btn-btn-1">Install Apps</button>
+                <button class="btn-btn-1">SignUP</button>
+                <button class="btn-btn-1">Login</button>
+            </div>
+            <div class="buttons buttons-b flex">
+                <button class="btn-btn-3-2">
+                    <p class="btn-btn-3-1">Explore Premium</p>
+                </button>
+                <div class="sign">
+                    <button class="btn-btn-2"><span class="material-symbols-outlined downloadCircle">
+                            arrow_circle_down
+                        </span>Install Apps</button>
+                    <button class="btn-btn-2">SignUP</button>
+                    <button class="btn-btn-3">
+                        <p class="btn-btn-3-1">Login</p>
+                    </button>
+                </div>
+            </div>
+                        <img class="hamburger invert" src="svgs/hamburger.svg" alt="hamburger">
+        </div>
+        <div class="pt-2 border flex">
+            <div class="left border">
+                <div class="library flex invert">
+                    <div class="close-sym invert">
+                    <img class="close" src="svgs/close.svg" alt="close-img">
+                </div>
+                    <h3>Your Playlist</h3>
+                    <span class=" add-btn material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="playlists" id="songList"></div>
+
+                <div class="footer">
+                    <div class="footerStyle">
+                        <div><a class="linkId" href="https://www.spotify.com/in-en/legal/">Legal</a></div>
+                        <div><a class="linkId" href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy
+                                Center</a></div>
+                        <div><a class="linkId" href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy
+                                Policy</a></div>
+                        <div><a class="linkId" href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                        </div>
+                        <div><a class="linkId" href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About
+                                Ads</a></div>
+                        <div><a class="linkId" href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                        </div>
+                    </div>
+                    <a class="cookies" href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                </div>
+
+            </div>
+            <div class="right border">
+                <div class="music-ly">
+                <div class="trending flex">
+                    <div class="lyc-main flex"><img class="lib-svg " src="svgs/library.svg" alt="lib-icon">
+                    <h2> Music Playlist</h2></div>
+                    <div class="lyrics-cls flex"><img class="lyrics-svg" src="svgs/lyrics.svg" alt="lyrics-svg">
+                    <img class="close-lyrics" src="svgs/close.svg" alt="close"></div>
+                </div>
+                <div class="music-box flex">
+                    <div class="Music-Image">
+                        <!-- <div class="m-Image "> -->
+                        <img class="m-Image " id="songImage" src="m_img/mu-img.jpg" alt="musicImage">
+                    </div>
+                    
+                    <div class="lyc" id="songLyrics">Lyrics
+                        
+                    </div>
+                    
+                </div>
+                <div class="playBar">
+                    <div class=" m-details">
+                        <div class="music-name">
+                            <p id="songTitle">No song playing</p>
+                        </div>
+                        <div class="seekbar">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="music-time">00:00/00:00
+
+                        </div>
+                    </div>
+                    
+                    <div class="music-controls">
+                        <audio id="audioPlayer"></audio>
+                        <span class="material-symbols-outlined" id="prevBtn">
+                            skip_previous
+                        </span>
+                        <span class="material-symbols-outlined" id="playBtn">
+                            play_circle
+                        </span>
+                        <span class="material-symbols-outlined" id="nextBtn">
+                            skip_next
+                        </span>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

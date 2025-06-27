@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify_clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+
+</head>
+
+<body>
+    <div class="container border bg-black">
+        <div class="navbar border flex pt-1">
+            <div class="op">
+                <ul>
+                    <li class="invert"><img src="svgs/logo.svg" alt="logo"></li>
+                    <li class="invert"><img src="svgs/home.svg" alt="home"></li>
+                </ul>
+                <div class="search-bar">
+                    <span class="material-symbols-outlined">search</span>
+                    <input type="text" placeholder="What do you want to play?" />
+                    <span class="vl"></span>
+                    <span class="material-symbols-outlined">browse</span>
+                </div>
+                <img class="search-svg invert" src="svgs/search.svg" alt="search-svg">
+            </div>
+
+            <div class="buttons-a side-bar">
+                <img class="close-sidebar" src="svgs/close.svg" alt="close-img">
+                <button class="btn-btn-1">Premium</button>
+                <button class="btn-btn-1">Support</button>
+                <button class="btn-btn-1">Download</button>
+                <button class="btn-btn-1">Install Apps</button>
+                <button class="btn-btn-1">SignUP</button>
+                <button class="btn-btn-1">Login</button>
+            </div>
+            <div class="buttons buttons-b flex">
+                <button class="btn-btn-1">Premium</button>
+                <button class="btn-btn-1">Support</button>
+                <button class="btn-btn-1">Download</button>
+                <div><span class="vl-2"></span></div>
+                <div class="sign">
+                    <button class="btn-btn-2"><span class="material-symbols-outlined downloadCircle">
+                            arrow_circle_down
+                        </span>Install Apps</button>
+                    <button class="btn-btn-2">SignUP</button>
+                    <button class="btn-btn-3">Login</button>
+                </div>
+            </div>
+            <img class="hamburger invert" src="svgs/hamburger.svg" alt="hamburger">
+        </div>
+
+
+        <div class="pt-2 border flex">
+            <div class="left border">
+
+                <div class="library flex invert">
+                    <div class="close-sym invert">
+                        <img class="close" src="svgs/close.svg" alt="close-img">
+                    </div>
+                    <h3>Your Library</h3>
+                    <span class=" add-btn material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="boxes">
+                    <div class="box-1">
+                        <h3>Create Your First Playlist</h3>
+                        <h5 style="padding: 5px 0px;">It's easy, we'll help you</h5>
+                        <button class="btn-1">Create Playlist</button>
+                    </div>
+                    <div class="box-2">
+                        <h3>Lets find some podcasts</h3>
+                        <h5 style="padding: 5px 0px;">we will keep you updated</h5>
+                        <button class="btn-2">Browse podcasts</button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="footerStyle">
+                        <div><a class="linkId" href="https://www.spotify.com/in-en/legal/">Legal</a></div>
+                        <div><a class="linkId" href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy
+                                Center</a></div>
+                        <div><a class="linkId" href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy
+                                Policy</a></div>
+                        <div><a class="linkId" href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                        </div>
+                        <div><a class="linkId" href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About
+                                Ads</a></div>
+                        <div><a class="linkId" href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                        </div>
+                    </div>
+                    <a class="cookies" href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                </div>
+            </div>
+            <div class="right border">
+                <div class="right-move">
+                    <div class="trending flex">
+                        <img class="lib-svg " src="svgs/library.svg" alt="lib-icon">
+                        <h2>Trending songs</h2>
+                    </div>
+                    <div class="cardcontainer">
+                        <div class="flex" id="songList">
+                            <div class="play-button">
+                                <div class="play-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popularArtist">
+                        <h2>Popular Artists</h2>
+                    </div>
+                    <div class="artist flex">
+                        <div class="artistImage"><img class="art-card"
+                                src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7"
+                                alt="Artist Image" class="circle">
+                            <p class="artistName">Arijit Singh</p>
+                            <p class="artist-01">artist</p>
+                        </div>
+                        <div class="artistImage"><img class="art-card"
+                                src="https://images.pexels.com/photos/3748221/pexels-photo-3748221.jpeg?auto=compress&cs=tinysrgb&h=400"
+                                alt="Artist Image" class="circle">
+                            <p class="artistName">Shreya Ghoshal</p>
+                            <p class="artist-01">artist</p>
+                        </div>
+                        <div class="artistImage"><img class="art-card"
+                                src="https://images.pexels.com/photos/2380794/pexels-photo-2380794.jpeg?auto=compress&cs=tinysrgb&h=400"
+                                alt="Artist Image" class="circle">
+                            <p class="artistName">Armaan Malik</p>
+                            <p class="artist-01">artist</p>
+                        </div>
+                        <div class="artistImage"><img class="art-card"
+                                src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&h=400"
+                                alt="Artist Image" class="circle">
+                            <p class="artistName">Adele</p>
+                            <p class="artist-01">artist</p>
+                        </div>
+                        <div class="artistImage"><img class="art-card"
+                                src="https://images.pexels.com/photos/1704489/pexels-photo-1704489.jpeg?auto=compress&cs=tinysrgb&h=400"
+                                alt="Artist Image" class="circle">
+                            <p class="artistName">The Weeknd</p>
+                            <p class="artist-01">artist</p>
+                        </div>
+                        <div class="artistImage"><img class="art-card"
+                                src="https://images.pexels.com/photos/3062541/pexels-photo-3062541.jpeg?auto=compress&cs=tinysrgb&h=400"
+                                alt="Artist Image" class="circle">
+                            <p class="artistName">Drake</p>
+                            <p class="artist-01">artist</p>
+                        </div>
+
+                    </div>
+                    <div class="footer-container">
+                        <hr class="footer-separator">
+
+                        <nav class="footer-nav flex">
+                            <div class="footer-columns flex">
+
+                                <div class="flex"><div class="footer-column f-1">
+                                    <ul class="footer-list">
+                                        <p class="footer-heading">Company</p>
+                                        <a href="https://www.spotify.com/in-en/about-us/contact/"
+                                            class="footer-link">About</a>
+                                        <a href="https://www.lifeatspotify.com/" class="footer-link">Jobs</a>
+                                        <a href="https://newsroom.spotify.com/" class="footer-link">For the Record</a>
+                                    </ul>
+                                </div>
+
+                                <div class="footer-column f-2">
+                                    <ul class="footer-list">
+                                        <p class="footer-heading">Communities</p>
+                                        <a href="https://artists.spotify.com/" class="footer-link">For Artists</a>
+                                        <a href="https://developer.spotify.com/" class="footer-link">Developers</a>
+                                        <a href="https://ads.spotify.com/" class="footer-link">Advertising</a>
+                                        <a href="https://investors.spotify.com/" class="footer-link">Investors</a>
+                                        <a href="https://spotifyforvendors.com/" class="footer-link">Vendors</a>
+                                    </ul>
+                                </div></div>
+
+                                <div class="flex"><div class="footer-column f-3">
+                                    <ul class="footer-list">
+                                        <p class="footer-heading">Useful links</p>
+                                        <a href="https://support.spotify.com/" class="footer-link">Support</a>
+                                        <a href="https://www.spotify.com/in-en/free/" class="footer-link">Free Mobile
+                                            App</a>
+                                    </ul>
+                                </div>
+
+                                <div class="footer-column f-4">
+                                    <ul class="footer-list">
+                                        <p class="footer-heading">Spotify Plans</p>
+                                        <a href="https://www.spotify.com/in-en/premium/" class="footer-link">Premium
+                                            Individual</a>
+                                        <a href="https://www.spotify.com/in-en/duo/" class="footer-link">Premium Duo</a>
+                                        <a href="https://www.spotify.com/in-en/family/" class="footer-link">Premium
+                                            Family</a>
+                                        <a href="https://www.spotify.com/in-en/student/" class="footer-link">Premium
+                                            Student</a>
+                                        <a href="https://www.spotify.com/in-en/free/" class="footer-link">Spotify
+                                            Free</a>
+                                    </ul>
+                                </div></div>
+                            </div>
+
+                            <div class="social-links invert">
+                                <a href="https://instagram.com/spotify" class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px"
+                                        viewBox="0 0 50 50">
+                                        <path
+                                            d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="https://twitter.com/spotify" class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px"
+                                        viewBox="0 0 50 50">
+                                        <path
+                                            d="M 11 4 C 7.1456661 4 4 7.1456661 4 11 L 4 39 C 4 42.854334 7.1456661 46 11 46 L 39 46 C 42.854334 46 46 42.854334 46 39 L 46 11 C 46 7.1456661 42.854334 4 39 4 L 11 4 z M 11 6 L 39 6 C 41.773666 6 44 8.2263339 44 11 L 44 39 C 44 41.773666 41.773666 44 39 44 L 11 44 C 8.2263339 44 6 41.773666 6 39 L 6 11 C 6 8.2263339 8.2263339 6 11 6 z M 13.085938 13 L 22.308594 26.103516 L 13 37 L 15.5 37 L 23.4375 27.707031 L 29.976562 37 L 37.914062 37 L 27.789062 22.613281 L 36 13 L 33.5 13 L 26.660156 21.009766 L 21.023438 13 L 13.085938 13 z M 16.914062 15 L 19.978516 15 L 34.085938 35 L 31.021484 35 L 16.914062 15 z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.facebook.com/Spotify" class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px"
+                                        viewBox="0 0 50 50">
+                                        <path
+                                            d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </nav>
+
+                        <hr class="footer-separator">
+
+                        <div class="copyright">
+                            <p>© 2025 Spotify AB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script src="main.js"></script>
+</body>
+
+</html>
